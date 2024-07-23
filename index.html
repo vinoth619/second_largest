@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>second_largest</title>
+</head>
+<body>
+    <h3> [no-3]Second Largest of three numbers: Write a program that takes three numbers as input and prints the second largest.</h3>
+    <input type="text" id="first">
+    <input type="text"id="second">
+    <input type="text" id="third">
+    <button onclick="find()">click</button>
+    <h1 id="show"></h1>
+    <script>
+        function find(){
+            
+            var first=document.getElementById("first")
+            var second=document.getElementById("second")
+            var third=document.getElementById("third")
+            var show=document.getElementById("show")
+                first=Number(first.value)
+                second=Number(second.value)
+                third=Number(third.value)
+                if(first<second && second<third){
+                    alert(second+"is second largest");
+                }
+                else if(second<first &&first<third){
+                    alert(first+"is  second largest");
+                }
+                else {
+                    alert(third+" is second largest")
+                }
+               
+
+
+
+
+        }
+    </script>
+
+</body>
+</html>
